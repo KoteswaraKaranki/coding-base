@@ -1,5 +1,5 @@
 						Data Structures & Algorithms
 						=============================
 
-Data Strcuture and Algorithms project.
+Data Structures & Algorithms project.
 
