@@ -3,7 +3,7 @@ package org.karanki.coding.recursion;
 import java.util.Scanner;
 
 /**
- * Factorial class which generates factorial for a given string in a recursive manner.
+ * Factorial class which generates factorial for a given input number in a recursive manner.
  * 
  * @author Koteswara R. Karanki
  * @since Jun 2016.
