@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   
-  <artifactId>linked-list</artifactId>
+  <artifactId>coding-base-linked-list</artifactId>
   
      <!-- project dependencies -->
    <dependencies>

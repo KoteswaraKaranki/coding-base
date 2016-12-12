@@ -6,8 +6,8 @@
   <packaging>pom</packaging>
   
   <modules>
-  	<module>recursion</module>
-  	<module>linked-list</module>
+  	<module>coding-base-recursion</module>
+  	<module>coding-base-linked-list</module>
   </modules>
   
   

@@ -1,55 +1,50 @@
 package org.karanki.coding.linked_list;
 
-import junit.framework.TestCase;
-
-
+import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  * Tests {@link SingleLinkedList} ADT.
  * @author Koteswara R. Karanki
  *
  */
-public class SingleLinkedListTest extends TestCase {
+public class SingleLinkedListTest {
 
 	
-	public void testInsertOp()
+	@Test
+	public void testInsertRearOp()
 	{
 		
 		SingleLinkedList ll = new SingleLinkedList();		
-		ll.insert(10);
-		ll.insert(20);
-		ll.insert(30);
+		ll.insertRear(10);
+		ll.insertRear(20);
+		ll.insertRear(30);
 		
 		assertNotNull(ll);
-
-		//handy just in case for human eye
-		//ll.print(System.out);
 		
-		ll.insert(40);
-		ll.insert(100);
+		ll.insertRear(40);
+		ll.insertRear(100);
 		
-
-		//handy just in case for human eye
-		//ll.print(System.out);
 	}
 	
-	public void testInsertAtBeginOp()
+	@Test
+	public void testInsertFrontOp()
 	{
 		
 		SingleLinkedList ll = new SingleLinkedList();		
-		ll.insertAtBegin(10);
-		ll.insertAtBegin(20);
-		ll.insertAtBegin(30);
+		ll.insertFront(10);
+		ll.insertFront(20);
+		ll.insertFront(30);
 		
 		//ll.print(System.out);
 		assertEquals("[30, 20, 10]", ll.toString());
 		
-		ll.insertAtBegin(40);
-		ll.insertAtBegin(50);
+		ll.insertFront(40);
+		ll.insertFront(50);
 		
 		assertEquals("[50, 40, 30, 20, 10]", ll.toString());
 		
-		ll.insert(60); //towards end/tail
+		ll.insertRear(60); //towards end/tail
 		assertEquals("[50, 40, 30, 20, 10, 60]", ll.toString());
 		
 		ll.delete(50);
@@ -61,72 +56,77 @@ public class SingleLinkedListTest extends TestCase {
 		ll.delete(60);
 		assertEquals("[40, 30, 10]", ll.toString());
 		
-		ll.insertAtBegin(-5);
+		ll.insertFront(-5);
 		
-		ll.insert(-10);
+		ll.insertRear(-10);
 		
 		assertEquals("[-5, 40, 30, 10, -10]", ll.toString());
 		
 		
 	}
 	
-	public void testFindOp()
+	@Test
+	public void testFindIndexOp()
 	{
 		
 		SingleLinkedList ll = new SingleLinkedList();
-		ll.insert(30);
-		ll.insert(40);
-		ll.insert(100);
-		ll.insert(10);
-		ll.insert(20);
+		ll.insertRear(30);
+		ll.insertRear(40);
+		ll.insertRear(100);
+		ll.insertRear(10);
+		ll.insertRear(20);
 		
-		assertEquals(1, ll.find(40));
-		assertEquals(2, ll.find(100));
-		assertEquals(4, ll.find(20));
-		assertEquals(-1 /* Doesn't exist so -1 */, ll.find(2000));
+		assertEquals(1, ll.findIndex(40));
+		assertEquals(2, ll.findIndex(100));
+		assertEquals(4, ll.findIndex(20));
+		assertEquals(-1 /* Doesn't exist so -1 */, ll.findIndex(2000));
 
 	}
 	
+	
+	@Test
 	public void testToString()
 	{
 		SingleLinkedList ll = new SingleLinkedList();
-		ll.insert(30);
-		ll.insert(40);
-		ll.insert(100);
-		ll.insert(10);
-		ll.insert(20);
+		ll.insertRear(30);
+		ll.insertRear(40);
+		ll.insertRear(100);
+		ll.insertRear(10);
+		ll.insertRear(20);
 		assertEquals("[30, 40, 100, 10, 20]", ll.toString());
 		
 		ll.delete(10);
 		assertEquals("[30, 40, 100, 20]", ll.toString());
 	}
 	
+	@Test
 	public void testLengthOp()
 	{
 		
 		SingleLinkedList ll = new SingleLinkedList();
 		assertEquals(0, ll.length());
 		
-		ll.insert(30);
-		ll.insert(40);
-		ll.insert(100);
+		ll.insertRear(30);
+		ll.insertRear(40);
+		ll.insertRear(100);
 		
 		assertEquals(3, ll.length());
 		
-		ll.insert(10);
-		ll.insert(20);
+		ll.insertRear(10);
+		ll.insertRear(20);
 		
 		assertEquals(5, ll.length());		
 
 	}
 	
+	@Test
 	public void testDeleteMiddleNodeOp()
 	{
 		
 		SingleLinkedList ll = new SingleLinkedList();		
-		ll.insert(30);
-		ll.insert(40);
-		ll.insert(100);
+		ll.insertRear(30);
+		ll.insertRear(40);
+		ll.insertRear(100);
 		
 		assertEquals(3, ll.length());
 		ll.delete(40);
@@ -135,23 +135,25 @@ public class SingleLinkedListTest extends TestCase {
 		assertEquals(2, ll.length());
 		
 		//assert index position after the delete OP
-		assertEquals(0, ll.find(30));
-		assertEquals(1, ll.find(100));
-		assertEquals(-1, ll.find(40)); //Make sure it doesn't exist at all, post-delete OP
+		assertEquals(0, ll.findIndex(30));
+		assertEquals(1, ll.findIndex(100));
+		assertEquals(-1, ll.findIndex(40)); //Make sure it doesn't exist at all, post-delete OP
 		
 		//handy just in case for human eye
 		//ll.print(System.out);
 
 	}
 	
+	
+	@Test
 	public void testDeleteHeadNodeOp()
 	{
 		SingleLinkedList ll = new SingleLinkedList();		
-		ll.insert(10);
-		ll.insert(5);
-		ll.insert(20);
-		ll.insert(1);
-		ll.insert(-5);
+		ll.insertRear(10);
+		ll.insertRear(5);
+		ll.insertRear(20);
+		ll.insertRear(1);
+		ll.insertRear(-5);
 		
 		assertEquals(5, ll.length());
 		ll.delete(10);
@@ -160,23 +162,25 @@ public class SingleLinkedListTest extends TestCase {
 		assertEquals(4, ll.length());
 		
 		//assert index position after the delete OP
-		assertEquals(0, ll.find(5));
-		assertEquals(2, ll.find(1));
-		assertEquals(-1, ll.find(10)); //Make sure it doesn't exist at all, post-delete OP
+		assertEquals(0, ll.findIndex(5));
+		assertEquals(2, ll.findIndex(1));
+		assertEquals(-1, ll.findIndex(10)); //Make sure it doesn't exist at all, post-delete OP
 		
 		//handy just in case for human eye
 		//ll.print(System.out);
 
 	}
 	
+	
+	@Test
 	public void testDeleteLastNodeOp()
 	{
 		SingleLinkedList ll = new SingleLinkedList();		
-		ll.insert(10);
-		ll.insert(5);
-		ll.insert(20);
-		ll.insert(1);
-		ll.insert(-5);
+		ll.insertRear(10);
+		ll.insertRear(5);
+		ll.insertRear(20);
+		ll.insertRear(1);
+		ll.insertRear(-5);
 		
 		assertEquals(5, ll.length());
 		ll.delete(-5);
@@ -185,22 +189,24 @@ public class SingleLinkedListTest extends TestCase {
 		assertEquals(4, ll.length());
 		
 		//assert index position after the delete OP
-		assertEquals(0, ll.find(10));
-		assertEquals(3, ll.find(1));
-		assertEquals(-1, ll.find(-5)); //Make sure it doesn't exist at all, post-delete OP
+		assertEquals(0, ll.findIndex(10));
+		assertEquals(3, ll.findIndex(1));
+		assertEquals(-1, ll.findIndex(-5)); //Make sure it doesn't exist at all, post-delete OP
 		
 		//handy just in case for human eye
 		//ll.print(System.out);
 
 	}
 	
+	
+	@Test
 	public void testDeleteDuplicateNodeOp()
 	{
 		SingleLinkedList ll = new SingleLinkedList();		
-		ll.insert(1);
-		ll.insert(2);
-		ll.insert(2);
-		ll.insert(3);		
+		ll.insertRear(1);
+		ll.insertRear(2);
+		ll.insertRear(2);
+		ll.insertRear(3);		
 		
 		assertEquals(4, ll.length());
 		ll.delete(2); //deletes the first encountered one in the list, in this case index-1, 2 @ index-2 would remain in tact.
@@ -209,8 +215,8 @@ public class SingleLinkedListTest extends TestCase {
 		assertEquals(3, ll.length());
 		
 		//assert index position after the delete OP
-		assertEquals(0, ll.find(1));
-		assertEquals(1, ll.find(2));	//after delete 2 @ index-2 , would move into index-1 position	
+		assertEquals(0, ll.findIndex(1));
+		assertEquals(1, ll.findIndex(2));	//after delete 2 @ index-2 , would move into index-1 position	
 		
 		//handy just in case for human eye
 		//ll.print(System.out);

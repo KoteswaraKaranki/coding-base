@@ -20,7 +20,7 @@ public class SingleLinkedList {
 	 * Inserts new node towards tail.
 	 * @param data
 	 */
-	public void insert(int data)
+	public void insertRear(int data)
 	{
 		
 		DataNode newDataNode = new DataNode(data);
@@ -49,7 +49,7 @@ public class SingleLinkedList {
 	 * Inserts new node as first node always.
 	 * @param data
 	 */
-	public void insertAtBegin(int data)
+	public void insertFront(int data)
 	{
 		DataNode newDataNode = new DataNode(data);
 		length++;		
@@ -102,7 +102,7 @@ public class SingleLinkedList {
 	 * @param data actual data to be searched for.
 	 * @return index position if found, -1 otherwise.
 	 */
-	public int find(int data)
+	public int findIndex(int data)
 	{
 	
 		int index = -1;
@@ -127,6 +127,7 @@ public class SingleLinkedList {
 		
 		return -1;
 	}
+	
 	
 	/**
 	 * Utility method just to print for human eye
@@ -176,14 +177,19 @@ public class SingleLinkedList {
 		return sb.toString();
 	}
 	
+	/**
+	 * Returns current length of the node, return 0 if empty.
+	 * @return number denoting the current ADT length.
+	 */
 	public int length()
 	{
 		return length;
 	}
 	
 	/**
-	 * Private Data storate helper for the ADT. This class stores the actual data, and pointer to the next.
-	 * @author koti
+	 * Private Data storage helper for the ADT. This class stores the actual data, and pointer to the next.
+	 * @author Koteswara R. Karanki
+	 * @since June 2016
 	 *
 	 */
 	private class DataNode
@@ -221,16 +227,16 @@ public class SingleLinkedList {
 		
 		SingleLinkedList ll = new SingleLinkedList();
 		
-		ll.insert(10);
-		ll.insert(20);
-		ll.insert(30);
+		ll.insertRear(10);
+		ll.insertRear(20);
+		ll.insertRear(30);
 		
 		
 		
-		System.out.println(ll.find(10));
-		System.out.println(ll.find(20));
-		System.out.println(ll.find(30));
-		System.out.println(ll.find(40));
+		System.out.println(ll.findIndex(10));
+		System.out.println(ll.findIndex(20));
+		System.out.println(ll.findIndex(30));
+		System.out.println(ll.findIndex(40));
 		
 		ll.print(System.out);
 
