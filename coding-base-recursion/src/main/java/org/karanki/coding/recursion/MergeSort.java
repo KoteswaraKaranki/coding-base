@@ -17,8 +17,7 @@ public class MergeSort {
 		merge(a, start, end);
 		
 	}
-	
-	
+		
 	public static void merge(int[] a, int start , int end) {
 	
 		int leftEnd  = (start + end) /2;		
@@ -54,7 +53,6 @@ public class MergeSort {
 	
 	public static void main(String[] args) {
 	
-
 		int[] a = {9, 5, 0, 2, 6, 3, 7,  1};
 		System.out.println("Before sort " + Arrays.toString(a));
 		mergeSort(a, 0, a.length -1);
