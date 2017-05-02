@@ -1,4 +1,4 @@
-package org.karanki.coding.recursion;
+package org.karanki.coding.sort;
 
 import java.util.Scanner;
 

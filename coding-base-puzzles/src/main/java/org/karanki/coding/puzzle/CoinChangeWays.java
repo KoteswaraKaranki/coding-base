@@ -1,4 +1,4 @@
-package org.karanki.coding.recursion;
+package org.karanki.coding.puzzle;
 
 import java.util.HashMap;
 import java.util.Map;

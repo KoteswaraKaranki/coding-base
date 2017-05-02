@@ -1,4 +1,4 @@
-package org.karanki.coding.recursion;
+package org.karanki.coding.puzzle;
 
 // A Naive recursive JAVA program to find minimum of coins
 // to make a given change for money 

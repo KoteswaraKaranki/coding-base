@@ -1,4 +1,4 @@
-package org.karanki.coding.puzzle;
+package org.karanki.coding.stack_queue;
 
 import java.util.Stack;
 
