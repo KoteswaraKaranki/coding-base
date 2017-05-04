@@ -1,4 +1,4 @@
-package org.karanki.play.coding.dp;
+package org.karanki.coding.recursion;
 
 public class Fibonacci {
 

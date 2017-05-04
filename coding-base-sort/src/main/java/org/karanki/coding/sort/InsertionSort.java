@@ -1,4 +1,4 @@
-package org.karanki.play.dsa_made_easy.sort.insertion;
+package org.karanki.coding.sort;
 
 public class InsertionSort {
 

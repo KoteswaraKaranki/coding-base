@@ -1,4 +1,5 @@
-package org.karanki.play.dsa_made_easy.search;
+package org.karanki.coding.search;
+
 
 import static org.junit.Assert.*;
 

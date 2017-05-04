@@ -1,4 +1,4 @@
-package org.karanki.play.dsa_made_easy.sort.selection;
+package org.karanki.coding.sort;
 
 public class SelectionSort {
 

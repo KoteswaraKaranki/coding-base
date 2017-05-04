@@ -1,4 +1,4 @@
-package org.karanki.play.dsa_made_easy.sort.bubble;
+package org.karanki.coding.sort;
 
 public class BubbleSort {
 
