@@ -1,43 +1,47 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  
-  <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>org.karanki.coding</groupId>
-  <artifactId>coding-base</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  
-   <properties>
-  	<java.version>1.8</java.version>
-   </properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <modules>
-  	<module>coding-base-recursion</module>
-  	<module>coding-base-linked-list</module>
-  	<module>coding-base-trees</module>
-  	<module>coding-base-search</module>
-  	<module>coding-base-sort</module>
-  	<module>coding-base-gaphs</module>
-  	<module>coding-base-bits</module>
-  	<module>coding-base-stacks-queues</module>
-  	<module>coding-base-puzzles</module>
-  	<module>coding-base-threads</module>
-  	<module>coding-base-collections</module>
-  	<module>coding-base-string</module>
-  	<module>coding-base-array</module>
-  </modules>
-  
-    <dependencies>
-  	
-  		<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.karanki.coding</groupId>
+	<artifactId>coding-base</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+    	<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<modules>
+		<module>coding-base-recursion</module>
+		<module>coding-base-linked-list</module>
+		<module>coding-base-trees-graphs</module>
+		<module>coding-base-search</module>
+		<module>coding-base-sort</module>
+		<module>coding-base-bits</module>
+		<module>coding-base-stacks-queues</module>
+		<module>coding-base-puzzles</module>
+		<module>coding-base-threads</module>
+		<module>coding-base-collections</module>
+		<module>coding-base-string</module>
+		<module>coding-base-array</module>
+		<module>hacker-rank-algorithms</module>
+		<module>hacker-rank-data-structures</module>
+		<module>cracking-coding-interview</module>
+	</modules>
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
-		    <groupId>junit</groupId>
-		    <artifactId>junit</artifactId>
-		    <version>4.11</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
 		</dependency>
-  		
-  
-  </dependencies>
-  
-  
+
+	</dependencies>
+
+
 </project>
