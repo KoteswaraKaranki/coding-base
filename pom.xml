@@ -30,6 +30,7 @@
 		<module>hacker-rank-algorithms</module>
 		<module>hacker-rank-data-structures</module>
 		<module>cracking-coding-interview</module>
+		<module>coding-base-collection</module>
 	</modules>
 
 	<dependencies>

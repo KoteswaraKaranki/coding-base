@@ -12,13 +12,11 @@ public class BubbleSort {
 		
 			swapped = false;
 			
-			for(int j = 0;  j < i ; j++) {
-				
+			for(int j = 0;  j < i ; j++) {				
 				if(a[j] > a[j+1]) {					
 					tmp = a[j];
 					a[j] = a [j+1];
-					a[j+1] = tmp;
-					
+					a[j+1] = tmp;					
 					swapped = true;
 				}
 			}

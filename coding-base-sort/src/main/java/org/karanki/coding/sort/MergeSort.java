@@ -18,7 +18,7 @@ public class MergeSort {
 		
 	}
 		
-	public static void merge(int[] a, int start , int end) {
+	private static void merge(int[] a, int start , int end) {
 	
 		int leftEnd  = (start + end) /2;		
 		int rightStart = leftEnd + 1;
