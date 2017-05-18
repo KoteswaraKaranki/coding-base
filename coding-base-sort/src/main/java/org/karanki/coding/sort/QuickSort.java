@@ -9,7 +9,7 @@ public class QuickSort {
 		
 		if(start >= end) return;		
 		int pIndex = partition(a, start, end);		
-		sort(a, start, pIndex-1);		
+		sort(a, start, pIndex -1);		
 		sort(a, pIndex + 1, end);
 		
 	}

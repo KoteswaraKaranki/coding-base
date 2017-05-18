@@ -1,6 +1,6 @@
 package org.karanki.coding.threads;
 
-public class MyDeadlock {
+public class Deadlock {
  
     String str1 = "Java";
     String str2 = "UNIX";
@@ -30,7 +30,7 @@ public class MyDeadlock {
     };
      
     public static void main(String a[]){
-        MyDeadlock mdl = new MyDeadlock();
+        Deadlock mdl = new Deadlock();
         mdl.trd1.start();
         mdl.trd2.start();
     }

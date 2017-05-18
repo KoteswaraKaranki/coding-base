@@ -9,11 +9,11 @@ import org.junit.Test;
 public class StringUtilTest {
 
 	
-	StringHelper testObject;
+	IndexOfUniqueChar testObject;
 	
 	@Before
 	public void setUp() {		
-		testObject = new StringHelper();
+		testObject = new IndexOfUniqueChar();
 	}
 	
 	

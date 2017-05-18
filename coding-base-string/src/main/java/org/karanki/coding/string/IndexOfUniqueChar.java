@@ -1,6 +1,6 @@
 package org.karanki.coding.string;
 
-public class StringHelper {
+public class IndexOfUniqueChar {
 
 	/**
 	 * Accepts & Considers only small case alphabets.

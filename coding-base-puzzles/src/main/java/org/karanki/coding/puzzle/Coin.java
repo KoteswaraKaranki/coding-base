@@ -31,7 +31,7 @@ class Coin
     public static void main(String args[])
     {
        int coins[] =  {9, 6, 5, 1};       
-       int V = 8;
+       int V = 25;
        System.out.println("Minimum coins required is "+ minCoins(coins, V) );
     }
 }

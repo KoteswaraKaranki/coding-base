@@ -28,7 +28,7 @@ public class Solution {
         }
         
         int moduloK = k % n; //if more than n times, k would be back to modulo of n it self
-        for(int a0 = 0; a0 < q; a0++){
+        for(int i = 0; i < q; i++){
             
         	int m = in.nextInt();            
             
