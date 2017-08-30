@@ -31,6 +31,7 @@
 		<module>hacker-rank-data-structures</module>
 		<module>cracking-coding-interview</module>
 		<module>coding-base-collection</module>
+		<module>coding-base-system-design</module>
 	</modules>
 
 	<dependencies>

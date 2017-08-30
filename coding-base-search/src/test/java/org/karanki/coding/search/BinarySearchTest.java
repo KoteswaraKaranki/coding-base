@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class BinarySearchTest {
 
-	BinarySearch testObj;
+	private BinarySearch testObj;
 	
 	
 	
