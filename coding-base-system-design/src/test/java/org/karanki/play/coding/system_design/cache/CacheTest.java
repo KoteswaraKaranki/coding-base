@@ -14,6 +14,7 @@ public class CacheTest {
 		testObject = new ConcreteCache();
 	}
 	
+	/*
 	
 	@Test
 	public void testPut() {		
@@ -35,6 +36,7 @@ public class CacheTest {
 				
 				
 	}
+	*/
 	
 	
 	

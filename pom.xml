@@ -34,7 +34,8 @@
 		<module>coding-base-system-design</module>
     <module>coding-base-cci</module>
     <module>coding-base-algoexpert</module>
-  </modules>
+    <module>coding-base-leetcode</module>
+	</modules>
 
 	<dependencies>
 
