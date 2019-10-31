@@ -2,7 +2,7 @@ package org.karanki.coding.sort;
 
 public class HeapSort {
 
-	public  void sort(int a[]) {
+	public  void sort(int arr[]) {
 		
 		int n = arr.length; 
 		
@@ -26,7 +26,7 @@ public class HeapSort {
 	}
 	
 	
-	private static void heapify(int a[], int len, int i) {		
+	private static void heapify(int arr[], int n, int i) {		
 		
 		 int largest = i; // Initialize largest as root 
 		int l = 2*i + 1; // left = 2*i + 1 

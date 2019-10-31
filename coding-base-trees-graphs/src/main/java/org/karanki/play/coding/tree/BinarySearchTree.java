@@ -1,5 +1,7 @@
 package org.karanki.play.coding.tree;
 
+import java.util.LinkedList;
+
 public class BinarySearchTree {
 
 	private Node root;
@@ -215,6 +217,71 @@ public class BinarySearchTree {
 		
 		return isBST(node.left, min, node.value) && isBST(node.right, (node.value + 1), max);
 		
+	}
+	
+	public void dfsTraversal(Node node) {
+		
+		if(node == null) {
+			return;
+		}
+		
+		
+		
+		LinkedList<Integer> queue = new LinkedList<Integer>();
+		
+		queue.push(node.value);
+		
+		
+		while(!queue.isEmpty()) {
+			
+			if(node.left != null) {
+				queue.push(node.left.value);
+			}
+			
+			if(node.right != null) {
+				queue.push(node.right.value);
+			}
+			
+			
+			queue.poll();
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		  /* Let us create following BST
+			    50
+			 /     \
+			30      70
+			/  \     /  \
+		  20  40   60  80
+		      /\
+		     35 45  
+		*/
+		/* BinarySearchTree testObj = new BinarySearchTree();
+		 
+		testObj.addBSTNode(50); 
+		testObj.addBSTNode(30);
+		testObj.addBSTNode(20);
+		testObj.addBSTNode(40);		
+		testObj.addBSTNode(35);
+		testObj.addBSTNode(45);
+		testObj.addBSTNode(70);		
+		testObj.addBSTNode(60);
+		testObj.addBSTNode(80);
+		
+		
+		testObj.postOrderTraverse();*/
+		
+		boolean isOdd = false;
+		
+		System.out.println(isOdd);
+		
+		isOdd = !isOdd;
+		
+		System.out.println(isOdd);
 	}
 	
 	

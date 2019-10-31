@@ -21,7 +21,7 @@ public class EggProblem {
 		// Consider all droppings from 1st floor to kth floor and
 		// return the minimum of these values plus 1.
 		for (int cnt = 1; cnt <= floors; cnt++) {
-			res = max(eggDrop(eggs - 1, cnt - 1), eggDrop(eggs, floors - cnt));
+			res = Math.max(eggDrop(eggs - 1, cnt - 1), eggDrop(eggs, floors - cnt));
 			if (res < min)
 				min = res;
 		}
@@ -29,14 +29,10 @@ public class EggProblem {
 		return min + 1;
 	}
 
-	// A utility function to get maximum of two integers
-	public static int max(int a, int b) {
-		return (a > b) ? a : b;
-	}
 
 	public static void main(String[] args) {
 
-		int eggs = 2, floors = 10;
+		int eggs = 2, floors = 20;
 		
 		System.out.println("Nof of trails in worst case for with " +  eggs + ", and floors " + floors + " are : " + 		
 				eggDrop(eggs, floors));
