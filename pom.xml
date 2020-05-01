@@ -15,27 +15,25 @@
 	</properties>
 
 	<modules>
-		<module>coding-base-recursion</module>
-		<module>coding-base-linked-list</module>
-		<module>coding-base-trees-graphs</module>
-		<module>coding-base-search</module>
-		<module>coding-base-sort</module>
-		<module>coding-base-bits</module>
-		<module>coding-base-stacks-queues</module>
-		<module>coding-base-puzzles</module>
-		<module>coding-base-threads</module>
-		<module>coding-base-collections</module>
-		<module>coding-base-string</module>
-		<module>coding-base-array</module>
+		<module>recursion</module>
+		<module>linked-list</module>
+		<module>trees-graphs</module>
+		<module>search</module>
+		<module>sort</module>
+		<module>bits</module>
+		<module>stacks-queues</module>
+		<module>puzzles</module>
+		<module>threads</module>
+		<module>collections</module>
+		<module>string</module>
+		<module>array</module>
 		<module>hacker-rank-algorithms</module>
 		<module>hacker-rank-data-structures</module>
 		<module>cracking-coding-interview</module>
-		<module>coding-base-collection</module>
-		<module>coding-base-system-design</module>
-    <module>coding-base-cci</module>
-    <module>coding-base-algoexpert</module>
-    
-    <module>coding-bae-prep2019</module>
+		<module>system-design</module>
+		<module>algoexpert</module>
+		<module>prep2019</module>
+		<module>leetcode</module>
 	</modules>
 
 	<dependencies>
