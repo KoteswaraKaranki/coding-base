@@ -33,7 +33,7 @@
 		<module>system-design</module>
 		<module>algoexpert</module>
 		<module>prep2019</module>
-		<module>leetcode</module>
+		<module>leet-code</module>
 	</modules>
 
 	<dependencies>
