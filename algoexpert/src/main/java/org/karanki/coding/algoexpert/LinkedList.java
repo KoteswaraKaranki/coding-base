@@ -1,4 +1,4 @@
-package org.karanki.coding.algoexpert.easy;
+package org.karanki.coding.algoexpert;
 
 /**
  * 
@@ -140,7 +140,7 @@ public class LinkedList {
 		ll.addNodeByIndex(15, 1);
 		ll.addNodeByIndex(25, 2);
 		ll.addNodeByIndex(35, 3);
-		ll.add(40);
+		ll.add(40);	
 		ll.addNodeByIndex(45, 5);
 		ll.add(50);
 		

@@ -1,4 +1,4 @@
-package org.karanki.coding.algoexpert.easy;
+package org.karanki.coding.algoexpert;
 
 import java.util.Arrays;
 

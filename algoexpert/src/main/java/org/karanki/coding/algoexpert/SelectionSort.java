@@ -1,22 +1,22 @@
-package org.karanki.coding.algoexpert.easy;
+package org.karanki.coding.algoexpert;
 
 import java.util.Arrays;
 
-public class BubbleSort {
-
+public class SelectionSort {
 	
 	public  int[] sort(int []A) {
-		
-		for(int i = 0; i < A.length-1; i++) {
-			int cntr = A.length - 1;
-			for(int j = 0; j < cntr; j++) {
-				if(A[j] > A[j+1]) {
-					A[j]   =  A[j] ^ A[j+1];
-					A[j+1] =  A[j] ^ A[j+1];
-					A[j]   =  A[j] ^ A[j+1];
+		for(int i = 0; i < A.length; i++) {
+			int minIdx = i;
+			for(int j = i; j < A.length; j++) {
+				if(A[minIdx] > A[j]) {
+					minIdx = j;
 				}
 			}
-			cntr--;
+			if(minIdx != i) {
+				A[i]   =  A[i] ^ A[minIdx];
+				A[minIdx] =  A[i] ^ A[minIdx];
+				A[i]   =  A[i] ^ A[minIdx];
+			}
 		}
 		return A;
 	}
@@ -36,7 +36,7 @@ public class BubbleSort {
 		System.out.print("X :: " + x +  ", Y :: " + y);
 		*/
 		
-		BubbleSort sort = new BubbleSort();
+		SelectionSort sort = new SelectionSort();
 		
 		int[] a1 = {10, 5, 4, 13, 25, 0, 2, 12, 1};
 		System.out.println("Before Sort : " + Arrays.toString(a1));

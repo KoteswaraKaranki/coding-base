@@ -34,6 +34,7 @@
 		<module>algoexpert</module>
 		<module>prep2019</module>
 		<module>leet-code</module>
+		<module>bits-pilani</module>
 	</modules>
 
 	<dependencies>
